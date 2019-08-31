@@ -1,4 +1,4 @@
-package com.leapsoftware.adapterdelegatecards.ui.dashboard
+package com.leapsoftware.adapterdelegatecards.ui.standard
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.leapsoftware.adapterdelegatecards.R
 
-class DashboardFragment : Fragment() {
+class StandardFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
+    private lateinit var standardViewModel: StandardViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
-            ViewModelProviders.of(this).get(DashboardViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
-        dashboardViewModel.text.observe(this, Observer {
+        standardViewModel =
+            ViewModelProviders.of(this).get(StandardViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_standard, container, false)
+        val textView: TextView = root.findViewById(R.id.text_standard)
+        standardViewModel.text.observe(this, Observer {
             textView.text = it
         })
         return root

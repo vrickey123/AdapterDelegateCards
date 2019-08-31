@@ -3,23 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_standard">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.leapsoftware.adapterdelegatecards.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_standard"
+        android:name="com.leapsoftware.adapterdelegatecards.ui.standard.StandardFragment"
+        android:label="@string/title_standard"
+        tools:layout="@layout/fragment_standard" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.leapsoftware.adapterdelegatecards.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.leapsoftware.adapterdelegatecards.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_delegates"
+        android:name="com.leapsoftware.adapterdelegatecards.ui.delegate.DelegateFragment"
+        android:label="@string/title_delegates"
+        tools:layout="@layout/fragment_delegate" />
 </navigation>

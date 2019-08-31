@@ -1,4 +1,4 @@
-package com.leapsoftware.adapterdelegatecards.ui.home
+package com.leapsoftware.adapterdelegatecards.ui.delegate
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.leapsoftware.adapterdelegatecards.R
 
-class HomeFragment : Fragment() {
+class DelegateFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+    private lateinit var delegateViewModel: DelegateViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        homeViewModel =
-            ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
-        homeViewModel.text.observe(this, Observer {
+        delegateViewModel =
+            ViewModelProviders.of(this).get(DelegateViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_delegate, container, false)
+        val textView: TextView = root.findViewById(R.id.text_delegate)
+        delegateViewModel.text.observe(this, Observer {
             textView.text = it
         })
         return root
