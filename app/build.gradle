@@ -37,6 +37,12 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.0.0'
     implementation 'androidx.navigation:navigation-ui-ktx:2.0.0'
 
+    // Serialization
+    implementation "com.squareup.moshi:moshi:$moshi_version"
+    implementation "com.squareup.moshi:moshi-kotlin:$moshi_version"
+    implementation "com.squareup.moshi:moshi-adapters:$moshi_version"
+
+    // Adapter Delegates
     implementation 'com.hannesdorfmann:adapterdelegates4:4.1.1'
 
     testImplementation 'junit:junit:4.12'

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "layoutKey": "material",
+    "textStyleKey": "h1",
+    "title": "This is a sample title",
+    "body": "This is a sample body",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 2,
+    "layoutKey": "visual",
+    "textStyleKey": "h2",
+    "title": "This is a sample title",
+    "body": "This is a sample body",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 3,
+    "layoutKey": "thumbnail",
+    "textStyleKey": "h3-italics",
+    "title": "This is a sample title",
+    "body": "This is a sample body",
+    "overline": "Sample Overline"
+  }
+]
