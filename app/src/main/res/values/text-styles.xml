@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="H1" parent="TextAppearance.MaterialComponents.Headline1">
+
+    </style>
+
+    <style name="H2" parent="TextAppearance.MaterialComponents.Headline2">
+
+    </style>
+
+    <style name="H3" parent="TextAppearance.MaterialComponents.Headline3">
+
+    </style>
+
+    <style name="Body" parent="TextAppearance.MaterialComponents.Body1">
+
+    </style>
+
+    <style name="Overline" parent="TextAppearance.MaterialComponents.Overline">
+
+    </style>
+</resources>

@@ -2,6 +2,9 @@ package com.leapsoftware.adapterdelegatecards.ui.delegate
 
 import com.hannesdorfmann.adapterdelegates4.ListDelegationAdapter
 import com.leapsoftware.adapterdelegatecards.data.FeedItem
+import com.leapsoftware.adapterdelegatecards.ui.delegate.adapterdelegates.MaterialCardAdapterDelegate
+import com.leapsoftware.adapterdelegatecards.ui.delegate.adapterdelegates.ThumbnailCardAdapterDelegate
+import com.leapsoftware.adapterdelegatecards.ui.delegate.adapterdelegates.VisualCardAdapterDelegate
 
 class FeedAdapterDelegatesManager(feedItems: List<FeedItem>) : ListDelegationAdapter<List<FeedItem>>() {
 
@@ -12,9 +15,16 @@ class FeedAdapterDelegatesManager(feedItems: List<FeedItem>) : ListDelegationAda
     }
 
     init {
-        delegatesManager.addDelegate(VIEW_TYPE_MATERIAL_CARD, MaterialCardAdapterDelegate())
-        delegatesManager.addDelegate(VIEW_TYPE_THUMBNAIL_CARD, ThumbnailCardAdapterDelegate())
-        delegatesManager.addDelegate(VIEW_TYPE_VISUAL_CARD, VisualCardAdapterDelegate())
-        delegatesManager.fallbackDelegate = MaterialCardAdapterDelegate()
+        delegatesManager.addDelegate(VIEW_TYPE_MATERIAL_CARD,
+            MaterialCardAdapterDelegate()
+        )
+        delegatesManager.addDelegate(VIEW_TYPE_THUMBNAIL_CARD,
+            ThumbnailCardAdapterDelegate()
+        )
+        delegatesManager.addDelegate(VIEW_TYPE_VISUAL_CARD,
+            VisualCardAdapterDelegate()
+        )
+        delegatesManager.fallbackDelegate =
+            MaterialCardAdapterDelegate()
     }
 }
