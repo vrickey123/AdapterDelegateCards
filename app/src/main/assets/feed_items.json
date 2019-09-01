@@ -10,7 +10,7 @@
   {
     "id": 2,
     "layoutKey": "visual",
-    "textStyleKey": "h2",
+    "textStyleKey": "h2-inverse",
     "title": "This is a sample title",
     "body": "This is a sample body",
     "overline": "Sample Overline"
@@ -18,7 +18,63 @@
   {
     "id": 3,
     "layoutKey": "thumbnail",
-    "textStyleKey": "h3-italics",
+    "textStyleKey": "h3",
+    "title": "This is a sample title",
+    "body": "This is a sample body",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 4,
+    "layoutKey": "visual",
+    "textStyleKey": "h2-inverse",
+    "title": "This is a sample title",
+    "body": "This is a sample body",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 5,
+    "layoutKey": "material",
+    "textStyleKey": "h1",
+    "title": "This is a sample title",
+    "body": "This is a sample body",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 6,
+    "layoutKey": "material",
+    "textStyleKey": "h1",
+    "title": "This is a sample title",
+    "body": "This is a sample body",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 7,
+    "layoutKey": "visual",
+    "textStyleKey": "h2-inverse",
+    "title": "This is a sample title",
+    "body": "This is a sample body",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 8,
+    "layoutKey": "thumbnail",
+    "textStyleKey": "h1",
+    "title": "This is a sample title",
+    "body": "This is a sample body",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 9,
+    "layoutKey": "thumbnail",
+    "textStyleKey": "h1",
+    "title": "This is a sample title",
+    "body": "This is a sample body",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 10,
+    "layoutKey": "material",
+    "textStyleKey": "h1",
     "title": "This is a sample title",
     "body": "This is a sample body",
     "overline": "Sample Overline"

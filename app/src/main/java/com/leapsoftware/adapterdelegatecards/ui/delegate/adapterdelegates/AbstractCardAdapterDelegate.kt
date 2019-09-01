@@ -17,18 +17,11 @@ abstract class AbstractCardAdapterDelegate : AdapterDelegate<List<FeedItem>>() {
         payloads: MutableList<Any>
     ) {
         val cardViewHolder = holder as CardViewHolder
-        cardViewHolder.overlineTextView.text = items[position].overline
+        cardViewHolder.resetDefaults()
+        cardViewHolder.overlineTextView?.text = items[position].overline
         cardViewHolder.titleTextView.text = items[position].title
-        cardViewHolder.bodyTextView.text = items[position].body
-
-        setTitleTextAppearance(cardViewHolder.titleTextView, items[position].textStyleKey)
+        cardViewHolder.bodyTextView?.text = items[position].body
+        cardViewHolder.setTitleTextAppearance(cardViewHolder.titleTextView, items[position].textStyleKey)
     }
 
-    private fun setTitleTextAppearance(titleTextView: TextView, textStyleKey: String) {
-        when (textStyleKey) {
-            "h1" -> TextViewCompat.setTextAppearance(titleTextView, R.style.H1)
-            "h2" -> TextViewCompat.setTextAppearance(titleTextView, R.style.H2)
-            "h3" -> TextViewCompat.setTextAppearance(titleTextView, R.style.H3)
-        }
-    }
 }
