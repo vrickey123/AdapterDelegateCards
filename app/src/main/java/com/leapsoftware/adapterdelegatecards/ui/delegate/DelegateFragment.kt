@@ -4,14 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.leapsoftware.adapterdelegatecards.R
-import com.leapsoftware.adapterdelegatecards.data.FeedItem
 import com.leapsoftware.adapterdelegatecards.networking.FakeRequestManager
 import com.leapsoftware.adapterdelegatecards.ui.FeedViewModelFactory
 
@@ -31,15 +29,14 @@ class DelegateFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        delegateViewModel = ViewModelProviders.of(this).get(DelegateViewModel::class.java)
-        return inflater.inflate(R.layout.fragment_delegate, container, false)
+        return inflater.inflate(R.layout.fragment_list_view, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val recyclerView = view.findViewById<RecyclerView>(R.id.fragment_delegate_recycler_view)
+        val recyclerView = view.findViewById<RecyclerView>(R.id.fragment_recycler_view)
 
-        val adapterDelegatesManager = FeedAdapterDelegatesManager(emptyList())
+        val adapterDelegatesManager = FeedAdapterDelegatesManager()
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = adapterDelegatesManager
 
@@ -47,7 +44,7 @@ class DelegateFragment : Fragment() {
     }
 
     private fun subscribeToUi(adapterDelegatesManager: FeedAdapterDelegatesManager) {
-        delegateViewModel.liveDataFeedItems.observe(this, Observer { feedItems ->
+        delegateViewModel.liveDataFeedItems.observe(viewLifecycleOwner, Observer { feedItems ->
             adapterDelegatesManager.items = feedItems
             adapterDelegatesManager.notifyDataSetChanged()
         })

@@ -4,14 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.leapsoftware.adapterdelegatecards.R
 import com.leapsoftware.adapterdelegatecards.networking.FakeRequestManager
 import com.leapsoftware.adapterdelegatecards.ui.FeedViewModelFactory
-import com.leapsoftware.adapterdelegatecards.ui.delegate.DelegateViewModel
 
 class StandardFragment : Fragment() {
 
@@ -29,13 +29,24 @@ class StandardFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        standardViewModel =
-            ViewModelProviders.of(this).get(StandardViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_standard, container, false)
-        val textView: TextView = root.findViewById(R.id.text_standard)
-        standardViewModel.liveDataFeedItems.observe(this, Observer {
-            textView.text = it[0].title
+        return inflater.inflate(R.layout.fragment_list_view, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val feedAdapter = FeedAdapter()
+        val recyclerView = view.findViewById<RecyclerView>(R.id.fragment_recycler_view)
+        recyclerView.adapter = feedAdapter
+        recyclerView.layoutManager = LinearLayoutManager(context)
+
+        subscribeToUi(feedAdapter)
+
+    }
+
+    fun subscribeToUi(feedAdapter: FeedAdapter) {
+        standardViewModel.liveDataFeedItems.observe(viewLifecycleOwner, Observer { feedItems ->
+            feedAdapter.submitList(feedItems)
         })
-        return root
     }
 }

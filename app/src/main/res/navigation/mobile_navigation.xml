@@ -9,11 +9,11 @@
         android:id="@+id/navigation_standard"
         android:name="com.leapsoftware.adapterdelegatecards.ui.standard.StandardFragment"
         android:label="@string/title_standard"
-        tools:layout="@layout/fragment_standard" />
+        tools:layout="@layout/fragment_list_view" />
 
     <fragment
         android:id="@+id/navigation_delegates"
         android:name="com.leapsoftware.adapterdelegatecards.ui.delegate.DelegateFragment"
         android:label="@string/title_delegates"
-        tools:layout="@layout/fragment_delegate" />
+        tools:layout="@layout/fragment_list_view" />
 </navigation>

@@ -1,10 +1,7 @@
 package com.leapsoftware.adapterdelegatecards.ui.delegate.adapterdelegates
 
-import android.widget.TextView
-import androidx.core.widget.TextViewCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.hannesdorfmann.adapterdelegates4.AdapterDelegate
-import com.leapsoftware.adapterdelegatecards.R
 import com.leapsoftware.adapterdelegatecards.data.FeedItem
 import com.leapsoftware.adapterdelegatecards.ui.CardViewHolder
 

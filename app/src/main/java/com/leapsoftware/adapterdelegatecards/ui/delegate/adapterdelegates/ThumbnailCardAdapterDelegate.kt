@@ -3,7 +3,6 @@ package com.leapsoftware.adapterdelegatecards.ui.delegate.adapterdelegates
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.hannesdorfmann.adapterdelegates4.AdapterDelegate
 import com.leapsoftware.adapterdelegatecards.R
 import com.leapsoftware.adapterdelegatecards.data.FeedItem
 import com.leapsoftware.adapterdelegatecards.ui.CardViewHolder

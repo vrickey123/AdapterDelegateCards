@@ -6,7 +6,7 @@ import com.leapsoftware.adapterdelegatecards.ui.delegate.adapterdelegates.Materi
 import com.leapsoftware.adapterdelegatecards.ui.delegate.adapterdelegates.ThumbnailCardAdapterDelegate
 import com.leapsoftware.adapterdelegatecards.ui.delegate.adapterdelegates.VisualCardAdapterDelegate
 
-class FeedAdapterDelegatesManager(feedItems: List<FeedItem>) : ListDelegationAdapter<List<FeedItem>>() {
+class FeedAdapterDelegatesManager() : ListDelegationAdapter<List<FeedItem>>() {
 
     companion object {
         const val VIEW_TYPE_MATERIAL_CARD = 1
