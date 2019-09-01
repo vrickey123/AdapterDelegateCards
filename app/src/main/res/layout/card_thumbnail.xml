@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/card_image"
-        android:layout_width="48dp"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
         android:scaleType="centerCrop"
-        app:layout_constraintDimensionRatio="1:1"
         android:src="@drawable/bird_parrots_hugging"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toRightOf="@+id/barrier"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/barrier"
-        tools:background="@android:color/darker_gray"/>
+        tools:background="@android:color/darker_gray" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:barrierDirection="end"
+        app:barrierDirection="start"
         app:constraint_referenced_ids="card_image" />
 
     <TextView
         android:id="@+id/card_overline"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/barrier"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/card_title"
-        tools:text="Overline"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/barrier"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Overline" />
 
     <TextView
         android:id="@+id/card_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/card_overline"
-        app:layout_constraintLeft_toRightOf="@id/barrier"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/card_body"
-        tools:text="Sample Title"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/barrier"
+        app:layout_constraintTop_toBottomOf="@id/card_overline"
+        tools:text="Sample Title" />
 
     <TextView
         android:id="@+id/card_body"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/card_title"
-        app:layout_constraintLeft_toRightOf="@id/barrier"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:text="This is a sample body."/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/barrier"
+        app:layout_constraintTop_toBottomOf="@id/card_title"
+        tools:text="This is a sample body." />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
