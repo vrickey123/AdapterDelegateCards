@@ -182,14 +182,14 @@ Layout is best conceptualized as the abstract positioning of views in a containe
 - Body Text View
 
 #### Thumbnail Card Layout
-![Layout Material](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/layout_thumbnail.png)
+![Layout Thumbnail](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/layout_thumbnail.png)
 - 1:1 Image
 - Overline Text View
 - Title Text View
 - Body Text View
 
 #### Visual Card Layout
-![Layout Material](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/layout_visual.png)
+![Layout Visual](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/layout_visual.png)
 - 4:2 Image
 - Overlay Gradient
 - Overlay Title Text View
@@ -238,6 +238,24 @@ The text styles make up our base Typography stylesheet and override [Android's T
 ```
 
 #### Composite Text Styles
+Using our text styles and typography style sheet, we can also define a set of composite text styles (pairings of multiple fonts, colors, ect.).
+
+##### Material
+![Text Style Material](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/text_style_material.png)
+
+##### Header
+![Text Style Header](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/text_style_header.png)
+
+##### Italic
+![Text Style Italic](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/text_style_italic.png)
+
+##### Light
+![Text Style Light](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/text_style_light.png)
+
+##### Typeset
+![Text Style Typeset](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/text_style_typeset.png)
+
+##### Visual
 
 ## Composition with a JSON Model
 ### FeedItem.json
