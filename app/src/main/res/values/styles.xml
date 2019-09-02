@@ -1,11 +1,41 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="Card" parent="Widget.MaterialComponents.CardView">\
+        <item name="cardBackgroundColor">@color/basilYellow</item>
+        <item name="cardElevation">8dp</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="CustomComponent">
+        <item name="android:paddingLeft">@dimen/material_component_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/material_component_horizontal_padding</item>
+    </style>
+
+    <style name="CustomComponent.Image">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="CustomComponent.Image.Thumbnail">
+        <item name="android:layout_marginRight">@dimen/material_component_horizontal_padding</item>
+    </style>
+
+    <style name="CustomComponent.Overline">
+        <item name="android:layout_marginTop">@dimen/material_component_vertical_padding</item>
+    </style>
+
+    <style name="CustomComponent.Headline">
+        <item name="android:layout_marginTop">@dimen/material_component_vertical_padding</item>
+    </style>
+
+    <style name="CustomComponent.Headline.Overlay">
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="CustomComponent.Body">
+        <item name="android:layout_marginTop">@dimen/material_component_vertical_padding</item>
+        <item name="lastBaselineToBottomHeight">20dp</item>
     </style>
 
 </resources>

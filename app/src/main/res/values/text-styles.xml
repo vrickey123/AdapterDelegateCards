@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- H5 -->
+    <style name="H5" parent="TextAppearance.MaterialComponents.Headline5"/>
+
+    <style name="H5.Serif">
+        <item name="fontFamily">@font/merriweather_regular</item>
+    </style>
+
+    <style name="H5.Serif.Light">
+        <item name="fontFamily">@font/merriweather_light</item>
+    </style>
+
+    <style name="H5.Serif.LightItalic">
+        <item name="fontFamily">@font/merriweather_lightitalic</item>
+    </style>
+
+    <style name="H5.SerifItalic">
+        <item name="fontFamily">@font/merriweather_regularitalic</item>
+    </style>
+
+    <style name="H5.Sans">
+        <item name="fontFamily">@font/quattrocentosans_regular</item>
+    </style>
+
+    <style name="H5.SansItalic">
+        <item name="fontFamily">@font/quattrocentosans_regularitalic</item>
+    </style>
+
+    <style name="H5.Sans.Bold">
+        <item name="fontFamily">@font/quattrocentosans_bold</item>
+    </style>
+
+    <!-- H6 -->
+    <style name="H6" parent="TextAppearance.MaterialComponents.Headline6"/>
+
+    <style name="H6.Serif">
+        <item name="fontFamily">@font/merriweather_regular</item>
+    </style>
+
+    <style name="H6.Serif.Light">
+        <item name="fontFamily">@font/merriweather_light</item>
+    </style>
+
+    <style name="H6.Serif.LightItalic">
+        <item name="fontFamily">@font/merriweather_lightitalic</item>
+    </style>
+
+    <style name="H6.Serif.Inverse">
+        <item name="android:textColor">@color/basilYellow</item>
+    </style>
+
+    <style name="H6.SerifItalic">
+        <item name="fontFamily">@font/merriweather_regularitalic</item>
+    </style>
+
+    <style name="H6.Sans">
+        <item name="fontFamily">@font/quattrocentosans_regular</item>
+    </style>
+
+    <style name="H6.SansItalic">
+        <item name="fontFamily">@font/quattrocentosans_regularitalic</item>
+    </style>
+
+    <style name="H6.Sans.Bold">
+        <item name="fontFamily">@font/quattrocentosans_bold</item>
+    </style>
+
+    <style name="H6.Sans.Bold.Inverse">
+        <item name="android:textColor">@color/basilYellow</item>
+    </style>
+
+    <!-- Body -->
+    <style name="Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="Body.Inverse" parent="Body">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Body.Sans" parent="Body">
+        <item name="fontFamily">@font/quattrocentosans_regular</item>
+    </style>
+
+    <style name="Body.Serif" parent="Body">
+        <item name="fontFamily">@font/merriweather_regular</item>
+    </style>
+
+    <!-- Overline -->
+    <style name="Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+</resources>
