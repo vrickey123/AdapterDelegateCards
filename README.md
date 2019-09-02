@@ -326,9 +326,9 @@ fun setCompositeTextAppearance(bodyTextView: TextView?, titleTextView: TextView,
 ![Visual-Visual](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/card_visual.png)
 
 ## Resources
-- Adapter Delegates
+- [Adapter Delegates](https://github.com/sockeqwe/AdapterDelegates)
 - [Material Typography](https://material.io/design/typography/the-type-system.html#type-scale)
-- Material Basil Theme
+- [Material Basil Theme](https://material.io/design/material-studies/basil.html#color)
 - [Android Text Appearance Attributes](https://developer.android.com/reference/android/R.styleable.html#TextAppearance)
-- Google Fonts
+- [Google Fonts](https://design.google/library/google-fonts/)
 
