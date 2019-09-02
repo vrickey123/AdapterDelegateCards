@@ -30,7 +30,7 @@ class FeedAdapter : ListAdapter<FeedItem, CardViewHolder>(FeedItemDiffCallback()
         holder.overlineTextView?.text = getItem(position).overline
         holder.titleTextView.text = getItem(position).title
         holder.bodyTextView?.text = getItem(position).body
-        holder.setTitleTextAppearance(holder.titleTextView, getItem(position).textStyleKey)
+        holder.setCompositeTextAppearance(holder.bodyTextView, holder.titleTextView, getItem(position).textStyleKey)
     }
 
     override fun getItemViewType(position: Int): Int {

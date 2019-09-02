@@ -39,7 +39,7 @@ class DelegateFragment : Fragment() {
 
         val linearLayoutManager = LinearLayoutManager(context)
         val adapterDelegatesManager = FeedAdapterDelegatesManager()
-        
+
         recyclerView.layoutManager = linearLayoutManager
         recyclerView.adapter = adapterDelegatesManager
         recyclerView.addItemDecoration(DividerItemDecoration(recyclerView.context, linearLayoutManager.orientation))

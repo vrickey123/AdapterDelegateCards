@@ -18,7 +18,7 @@ abstract class AbstractCardAdapterDelegate : AdapterDelegate<List<FeedItem>>() {
         cardViewHolder.overlineTextView?.text = items[position].overline
         cardViewHolder.titleTextView.text = items[position].title
         cardViewHolder.bodyTextView?.text = items[position].body
-        cardViewHolder.setTitleTextAppearance(cardViewHolder.titleTextView, items[position].textStyleKey)
+        cardViewHolder.setCompositeTextAppearance(cardViewHolder.bodyTextView, cardViewHolder.titleTextView, items[position].textStyleKey)
     }
 
 }

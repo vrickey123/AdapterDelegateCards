@@ -1,26 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="H1" parent="TextAppearance.MaterialComponents.Headline1">
-        <item name="android:textSize">28sp</item>
+    <!-- H5 -->
+    <style name="H5" parent="TextAppearance.MaterialComponents.Headline5"/>
+
+    <style name="H5.Serif.Light" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/merriweather_light</item>
     </style>
 
-    <style name="H2" parent="TextAppearance.MaterialComponents.Headline2">
-        <item name="android:textSize">24sp</item>
+    <style name="H5.Serif.LightItalic" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/merriweather_lightitalic</item>
     </style>
 
-    <style name="H2.Inverse" parent="H2">
+    <style name="H5.Serif" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/merriweather_regular</item>
+    </style>
+
+    <style name="H5.SerifItalic" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/merriweather_regularitalic</item>
+    </style>
+
+    <style name="H5.Sans" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/quattrocentosans_regular</item>
+    </style>
+
+    <style name="H5.SansItalic" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/quattrocentosans_regularitalic</item>
+    </style>
+
+    <style name="H5.Sans.Bold" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/quattrocentosans_bold</item>
+    </style>
+
+    <!-- H6 -->
+    <style name="H6.Serif.Light" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/merriweather_light</item>
+    </style>
+
+    <style name="H6.Serif.LightItalic" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/merriweather_lightitalic</item>
+    </style>
+
+    <style name="H6.Serif" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/merriweather_regular</item>
+    </style>
+
+    <style name="H6.Serif.Inverse" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="H3" parent="TextAppearance.MaterialComponents.Headline3">
-        <item name="android:textSize">20sp</item>
+    <style name="H6.SerifItalic" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/merriweather_regularitalic</item>
     </style>
 
-    <style name="Body" parent="TextAppearance.MaterialComponents.Body1">
-
+    <style name="H6.Sans" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/quattrocentosans_regular</item>
     </style>
 
-    <style name="Overline" parent="TextAppearance.MaterialComponents.Overline">
-
+    <style name="H6.SansItalic" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/quattrocentosans_regularitalic</item>
     </style>
+
+    <style name="H6.Sans.Bold" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/quattrocentosans_bold</item>
+    </style>
+
+    <style name="H6.Sans.Bold.Inverse" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Body -->
+    <style name="Body" parent="TextAppearance.MaterialComponents.Body1"/>
+
+    <style name="Body.Inverse" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Body.Sans" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/quattrocentosans_regular</item>
+    </style>
+
+    <style name="Body.Serif" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/quattrocentosans_regular</item>
+    </style>
+
+    <!-- Overline -->
+    <style name="Overline" parent="TextAppearance.MaterialComponents.Overline"/>
+
 </resources>

@@ -20,12 +20,33 @@ class CardViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         bodyTextView?.visibility = View.VISIBLE
     }
 
-    fun setTitleTextAppearance(titleTextView: TextView, textStyleKey: String) {
+    // material, light, visual, traditional, header
+    fun setCompositeTextAppearance(bodyTextView: TextView?, titleTextView: TextView, textStyleKey: String) {
         when (textStyleKey) {
-            "h1" -> TextViewCompat.setTextAppearance(titleTextView, R.style.H1)
-            "h2" -> TextViewCompat.setTextAppearance(titleTextView, R.style.H2)
-            "h2-inverse" -> TextViewCompat.setTextAppearance(titleTextView, R.style.H2_Inverse)
-            "h3" -> TextViewCompat.setTextAppearance(titleTextView, R.style.H3)
+            "material" -> {
+                TextViewCompat.setTextAppearance(titleTextView, R.style.H5)
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body) }
+            }
+            "light" -> {
+                TextViewCompat.setTextAppearance(titleTextView, R.style.H5_Serif_Light)
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body_Sans) }
+            }
+            "visual" -> {
+                TextViewCompat.setTextAppearance(titleTextView, R.style.H6_Sans_Bold_Inverse)
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body_Sans) }
+            }
+            "typeset" -> {
+                TextViewCompat.setTextAppearance(titleTextView, R.style.H5_Serif)
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body_Serif) }
+            }
+            "header" -> {
+                TextViewCompat.setTextAppearance(titleTextView, R.style.H5_Sans_Bold)
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body) }
+            }
+            "italic" -> {
+                TextViewCompat.setTextAppearance(titleTextView, R.style.H5_SerifItalic)
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body) }
+            }
         }
     }
 }
