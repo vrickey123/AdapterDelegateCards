@@ -20,7 +20,6 @@ class CardViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         bodyTextView?.visibility = View.VISIBLE
     }
 
-    // material, light, visual, traditional, header
     fun setCompositeTextAppearance(bodyTextView: TextView?, titleTextView: TextView, textStyleKey: String) {
         when (textStyleKey) {
             "material" -> {
