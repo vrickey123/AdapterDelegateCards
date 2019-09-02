@@ -4,11 +4,11 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/basilGreenMid</item>
         <item name="colorPrimaryDark">@color/basilGreenDark</item>
-        <item name="colorAccent">@color/basilOrange</item>
+        <item name="colorAccent">@color/basilPink</item>
         <item name="colorSecondary">@color/basilOrange</item>
         <item name="android:textColorPrimary">@color/basilOrange</item>
         <item name="android:textColorSecondary">@color/basilGreenDark</item>
-        <item name="android:windowBackground">@color/basilGreenLight</item>
+        <item name="android:windowBackground">@color/basilGreenUltraLight</item>
         <item name="android:listDivider">@drawable/divider</item>
     </style>
 

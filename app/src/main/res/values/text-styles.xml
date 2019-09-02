@@ -45,7 +45,7 @@
     </style>
 
     <style name="H6.Serif.Inverse" parent="TextAppearance.MaterialComponents.Headline6">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/basilYellow</item>
     </style>
 
     <style name="H6.SerifItalic" parent="TextAppearance.MaterialComponents.Headline6">
@@ -65,7 +65,7 @@
     </style>
 
     <style name="H6.Sans.Bold.Inverse" parent="TextAppearance.MaterialComponents.Headline6">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/basilYellow</item>
     </style>
 
     <!-- Body -->
@@ -73,21 +73,21 @@
         <item name="android:textColor">?android:textColorSecondary</item>
     </style>
 
-    <style name="Body.Inverse" parent="TextAppearance.MaterialComponents.Body1">
+    <style name="Body.Inverse" parent="Body">
         <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="Body.Sans" parent="TextAppearance.MaterialComponents.Body1">
+    <style name="Body.Sans" parent="Body">
         <item name="fontFamily">@font/quattrocentosans_regular</item>
     </style>
 
-    <style name="Body.Serif" parent="TextAppearance.MaterialComponents.Body1">
+    <style name="Body.Serif" parent="Body">
         <item name="fontFamily">@font/merriweather_regular</item>
     </style>
 
     <!-- Overline -->
     <style name="Overline" parent="TextAppearance.MaterialComponents.Overline">
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
 
 </resources>

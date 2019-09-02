@@ -33,6 +33,7 @@
         <TextView
             android:id="@+id/card_overline"
             style="@style/CustomComponent.Overline"
+            android:textAppearance="@style/Overline"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@+id/card_title"

@@ -41,10 +41,14 @@ class CardViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             }
             "header" -> {
                 TextViewCompat.setTextAppearance(titleTextView, R.style.H5_Sans_Bold)
-                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body) }
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body_Sans) }
             }
             "italic" -> {
                 TextViewCompat.setTextAppearance(titleTextView, R.style.H5_SerifItalic)
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body_Serif) }
+            }
+            else -> {
+                TextViewCompat.setTextAppearance(titleTextView, R.style.H5)
                 bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body) }
             }
         }
