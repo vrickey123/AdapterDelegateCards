@@ -7,6 +7,8 @@ This sample uses Adapter Delegates to create a visually robust feed with a few g
 2. Separate Layout, Style, and Text Style
 3. Compose card style with a JSON model
 
+Following these principles, we will get 15 different card variants with just three Adapter Delegates.
+
 ## RecyclerView Adapter vs Adapter Delegates
 The main objective of the Adapter Delegate system is to favor composition over inheritence when using the RecyclerView. **We will create Cards instead of Adapters.**
 
