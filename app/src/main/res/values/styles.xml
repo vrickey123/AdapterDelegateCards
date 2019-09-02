@@ -9,4 +9,40 @@
         <item name="android:listDivider">@drawable/divider</item>
     </style>
 
+    <style name="Card" parent="Widget.MaterialComponents.CardView">
+<!--        <item name="android:paddingLeft">8dp</item>-->
+<!--        <item name="android:paddingRight">8dp</item>-->
+    </style>
+
+    <style name="CustomWidget">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="CustomWidget.Image">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="CustomWidget.Image.Thumbnail">
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="CustomWidget.Overline">
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="CustomWidget.Headline" parent="CustomWidget">
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="CustomWidget.Headline.Overlay" parent="CustomWidget">
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="CustomWidget.Body" parent="CustomWidget">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="lastBaselineToBottomHeight">20dp</item>
+    </style>
+
 </resources>

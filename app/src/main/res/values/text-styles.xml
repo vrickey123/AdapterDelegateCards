@@ -80,7 +80,7 @@
     </style>
 
     <style name="Body.Serif" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="fontFamily">@font/quattrocentosans_regular</item>
+        <item name="fontFamily">@font/merriweather_regular</item>
     </style>
 
     <!-- Overline -->

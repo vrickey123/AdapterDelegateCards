@@ -2,7 +2,7 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/Widget.MaterialComponents.CardView"
+    style="@style/Card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -12,14 +12,15 @@
 
         <ImageView
             android:id="@+id/card_image"
+            style="@style/CustomWidget.Image.Thumbnail"
             android:layout_width="0dp"
-            android:layout_height="48dp"
+            android:layout_height="72dp"
             android:scaleType="centerCrop"
             android:src="@drawable/bird_parrots_hugging"
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintLeft_toRightOf="@+id/barrier"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@id/card_overline"
             tools:background="@android:color/darker_gray" />
 
         <androidx.constraintlayout.widget.Barrier
@@ -31,6 +32,7 @@
 
         <TextView
             android:id="@+id/card_overline"
+            style="@style/CustomWidget.Overline"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@+id/card_title"
@@ -41,6 +43,7 @@
 
         <TextView
             android:id="@+id/card_title"
+            style="@style/CustomWidget.Headline"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@+id/card_body"
@@ -51,6 +54,7 @@
 
         <TextView
             android:id="@+id/card_body"
+            style="@style/CustomWidget.Body"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
