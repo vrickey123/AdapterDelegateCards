@@ -2,46 +2,51 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/basilGreenMid</item>
+        <item name="colorPrimaryDark">@color/basilGreenDark</item>
+        <item name="colorAccent">@color/basilOrange</item>
+        <item name="colorSecondary">@color/basilOrange</item>
+        <item name="android:textColorPrimary">@color/basilOrange</item>
+        <item name="android:textColorSecondary">@color/basilGreenDark</item>
+        <item name="android:windowBackground">@color/basilGreenLight</item>
         <item name="android:listDivider">@drawable/divider</item>
     </style>
 
-    <style name="Card" parent="Widget.MaterialComponents.CardView">
-<!--        <item name="android:paddingLeft">8dp</item>-->
-<!--        <item name="android:paddingRight">8dp</item>-->
+    <style name="Card" parent="Widget.MaterialComponents.CardView">\
+        <item name="cardBackgroundColor">@color/basilYellow</item>
+        <item name="cardElevation">8dp</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
     </style>
 
-    <style name="CustomWidget">
-        <item name="android:paddingLeft">8dp</item>
-        <item name="android:paddingRight">8dp</item>
+    <style name="CustomComponent">
+        <item name="android:paddingLeft">@dimen/material_component_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/material_component_horizontal_padding</item>
     </style>
 
-    <style name="CustomWidget.Image">
+    <style name="CustomComponent.Image">
         <item name="android:paddingLeft">0dp</item>
         <item name="android:paddingRight">0dp</item>
     </style>
 
-    <style name="CustomWidget.Image.Thumbnail">
-        <item name="android:layout_marginRight">8dp</item>
+    <style name="CustomComponent.Image.Thumbnail">
+        <item name="android:layout_marginRight">@dimen/material_component_horizontal_padding</item>
     </style>
 
-    <style name="CustomWidget.Overline">
-        <item name="android:layout_marginTop">8dp</item>
+    <style name="CustomComponent.Overline">
+        <item name="android:layout_marginTop">@dimen/material_component_vertical_padding</item>
     </style>
 
-    <style name="CustomWidget.Headline" parent="CustomWidget">
-        <item name="android:layout_marginTop">8dp</item>
+    <style name="CustomComponent.Headline">
+        <item name="android:layout_marginTop">@dimen/material_component_vertical_padding</item>
     </style>
 
-    <style name="CustomWidget.Headline.Overlay" parent="CustomWidget">
+    <style name="CustomComponent.Headline.Overlay">
         <item name="android:layout_marginBottom">16dp</item>
     </style>
 
-    <style name="CustomWidget.Body" parent="CustomWidget">
-        <item name="android:layout_marginTop">8dp</item>
+    <style name="CustomComponent.Body">
+        <item name="android:layout_marginTop">@dimen/material_component_vertical_padding</item>
         <item name="lastBaselineToBottomHeight">20dp</item>
     </style>
 

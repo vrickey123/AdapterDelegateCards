@@ -12,7 +12,7 @@
 
         <ImageView
             android:id="@+id/card_image"
-            style="@style/CustomWidget.Image.Thumbnail"
+            style="@style/CustomComponent.Image.Thumbnail"
             android:layout_width="0dp"
             android:layout_height="72dp"
             android:scaleType="centerCrop"
@@ -32,7 +32,7 @@
 
         <TextView
             android:id="@+id/card_overline"
-            style="@style/CustomWidget.Overline"
+            style="@style/CustomComponent.Overline"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@+id/card_title"
@@ -43,7 +43,7 @@
 
         <TextView
             android:id="@+id/card_title"
-            style="@style/CustomWidget.Headline"
+            style="@style/CustomComponent.Headline"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@+id/card_body"
@@ -54,7 +54,7 @@
 
         <TextView
             android:id="@+id/card_body"
-            style="@style/CustomWidget.Body"
+            style="@style/CustomComponent.Body"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"

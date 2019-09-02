@@ -69,7 +69,9 @@
     </style>
 
     <!-- Body -->
-    <style name="Body" parent="TextAppearance.MaterialComponents.Body1"/>
+    <style name="Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
 
     <style name="Body.Inverse" parent="TextAppearance.MaterialComponents.Body1">
         <item name="android:textColor">@android:color/white</item>
@@ -84,6 +86,8 @@
     </style>
 
     <!-- Overline -->
-    <style name="Overline" parent="TextAppearance.MaterialComponents.Overline"/>
+    <style name="Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
 
 </resources>

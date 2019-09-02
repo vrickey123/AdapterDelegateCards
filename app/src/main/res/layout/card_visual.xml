@@ -12,7 +12,7 @@
 
         <ImageView
             android:id="@+id/card_image"
-            style="@style/CustomWidget.Image"
+            style="@style/CustomComponent.Image"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:scaleType="centerCrop"
@@ -36,7 +36,7 @@
 
         <TextView
             android:id="@+id/card_title"
-            style="@style/CustomWidget.Headline.Overlay"
+            style="@style/CustomComponent.Headline.Overlay"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
