@@ -195,8 +195,47 @@ Layout is best conceptualized as the abstract positioning of views in a containe
 - Overlay Title Text View
 
 ### Styles
+The styles are concerned with the relationship between views in a layout; i.e. margin, padding, or line height properties. By keep text styles in separate dimension, styles can be simplified and reused across many layouts easily.
+
+```
+<style name="CustomComponent.Overline">
+        <item name="android:layout_marginTop">@dimen/material_component_vertical_padding</item>
+    </style>
+
+    <style name="CustomComponent.Headline">
+        <item name="android:layout_marginTop">@dimen/material_component_vertical_padding</item>
+    </style>
+
+    <style name="CustomComponent.Headline.Overlay">
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="CustomComponent.Body">
+        <item name="android:layout_marginTop">@dimen/material_component_vertical_padding</item>
+        <item name="lastBaselineToBottomHeight">20dp</item>
+    </style>
+```
 
 ### Text Styles
+The text styles make up our base Typography stylesheet and override [Android's TextAppearance attributes](https://developer.android.com/reference/android/R.styleable.html#TextAppearance).
+
+```
+    <style name="Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="Body.Inverse" parent="Body">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Body.Sans" parent="Body">
+        <item name="fontFamily">@font/quattrocentosans_regular</item>
+    </style>
+
+    <style name="Body.Serif" parent="Body">
+        <item name="fontFamily">@font/merriweather_regular</item>
+    </style>
+```
 
 #### Composite Text Styles
 
@@ -213,6 +252,13 @@ Using a `layoutKey` and a `textStyleKey`, we can compose our cards on the fly wi
     "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "overline": "Birds of Paradise"
   }
+```
+
+### AdapterDelegate#isForViewType
+```
+override fun isForViewType(items: List<FeedItem>, position: Int): Boolean {
+        return items[position].layoutKey == "visual"
+    }
 ```
 
 ### CardViewHolder#setCompositeTextAppearance
@@ -252,4 +298,11 @@ fun setCompositeTextAppearance(bodyTextView: TextView?, titleTextView: TextView,
 ```
 
 ### Examples
+
+## Resources
+- Adapter Delegates
+- [Material Typography](https://material.io/design/typography/the-type-system.html#type-scale)
+- Material Basil Theme
+- [Android Text Appearance Attributes](https://developer.android.com/reference/android/R.styleable.html#TextAppearance)
+- Google Fonts
 
