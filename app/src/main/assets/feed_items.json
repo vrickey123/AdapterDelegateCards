@@ -42,7 +42,7 @@
   {
     "id": 6,
     "layoutKey": "material",
-    "textStyleKey": "italic",
+    "textStyleKey": "light",
     "title": "Lorem ipsum",
     "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "overline": "Sample Overline"
@@ -75,6 +75,30 @@
     "id": 10,
     "layoutKey": "material",
     "textStyleKey": "material",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 11,
+    "layoutKey": "material",
+    "textStyleKey": "typeset",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 12,
+    "layoutKey": "visual",
+    "textStyleKey": "visual",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 6,
+    "layoutKey": "material",
+    "textStyleKey": "header",
     "title": "Lorem ipsum",
     "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "overline": "Sample Overline"
