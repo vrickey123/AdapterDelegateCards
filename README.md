@@ -1,4 +1,6 @@
 # AdapterDelegateCards
+<img src="https://github.com/vrickey123/AdapterDelegateCards/blob/chore/update-readme/docs/feed.gif" width="360">
+
 [Adapter Delegates](https://github.com/sockeqwe/AdapterDelegates) are an inversion control pattern for the RecylerView designed to help you _add reusable cards to a list_ instead of _defining a fix set of cards to an Adapter_ that [leads to a subclass hell](http://hannesdorfmann.com/android/adapter-delegates).
 
 This sample uses Adapter Delegates to create a visually robust feed with a few goals:
