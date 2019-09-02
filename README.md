@@ -65,6 +65,8 @@ Ideally, we want to harness the performance of the RecyclerView Adapter with som
 
 Each Adapter Delegate implements the RecyclerView Adapter methods of `onCreateViewHolder` and `onBindViewHolder` to compose a card. 
 
+**The `isForViewType` method defines the condition when we would like to use the specific card.**
+
 #### Material Card Adapter Delegate
 ```
 class MaterialCardAdapterDelegate() : AbstractCardAdapterDelegate() {
@@ -168,6 +170,10 @@ By separating layout, styles, and text styles across three dimensions; it is pos
 ### Layout
 Layout is best conceptualized as the abstract positioning of views in a container. Our layouts are concerned with what views go where without knowing what our final card will look like.
 
+1. Material Card Layout
+2. Thumbnail Card Layout
+3. Visual Card Layout
+
 #### Material Card Layout
 ![Layout Material](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/layout_material.png)
 - 3:2 Image
@@ -189,6 +195,61 @@ Layout is best conceptualized as the abstract positioning of views in a containe
 - Overlay Title Text View
 
 ### Styles
+
 ### Text Styles
 
-## Composite Text
+#### Composite Text Styles
+
+## Composition with a JSON Model
+### FeedItem.json
+Using a `layoutKey` and a `textStyleKey`, we can compose our cards on the fly with a combination layout and composite text style.
+
+```
+{
+    "id": 1,
+    "layoutKey": "material",
+    "textStyleKey": "italic",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Birds of Paradise"
+  }
+```
+
+### CardViewHolder#setCompositeTextAppearance
+```
+fun setCompositeTextAppearance(bodyTextView: TextView?, titleTextView: TextView, textStyleKey: String) {
+        when (textStyleKey) {
+            "material" -> {
+                TextViewCompat.setTextAppearance(titleTextView, R.style.H5)
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body) }
+            }
+            "light" -> {
+                TextViewCompat.setTextAppearance(titleTextView, R.style.H5_Serif_Light)
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body_Sans) }
+            }
+            "visual" -> {
+                TextViewCompat.setTextAppearance(titleTextView, R.style.H6_Sans_Bold_Inverse)
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body_Sans) }
+            }
+            "typeset" -> {
+                TextViewCompat.setTextAppearance(titleTextView, R.style.H5_Serif)
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body_Serif) }
+            }
+            "header" -> {
+                TextViewCompat.setTextAppearance(titleTextView, R.style.H5_Sans_Bold)
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body_Sans) }
+            }
+            "italic" -> {
+                TextViewCompat.setTextAppearance(titleTextView, R.style.H5_SerifItalic)
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body_Serif) }
+            }
+            else -> {
+                TextViewCompat.setTextAppearance(titleTextView, R.style.H5)
+                bodyTextView?.let { TextViewCompat.setTextAppearance(it, R.style.Body) }
+            }
+        }
+    }
+```
+
+### Examples
+
