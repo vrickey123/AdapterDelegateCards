@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.leapsoftware.adapterdelegatecards.R
@@ -36,9 +37,12 @@ class DelegateFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val recyclerView = view.findViewById<RecyclerView>(R.id.fragment_recycler_view)
 
+        val linearLayoutManager = LinearLayoutManager(context)
         val adapterDelegatesManager = FeedAdapterDelegatesManager()
-        recyclerView.layoutManager = LinearLayoutManager(context)
+        
+        recyclerView.layoutManager = linearLayoutManager
         recyclerView.adapter = adapterDelegatesManager
+        recyclerView.addItemDecoration(DividerItemDecoration(recyclerView.context, linearLayoutManager.orientation))
 
         subscribeToUi(adapterDelegatesManager)
     }
