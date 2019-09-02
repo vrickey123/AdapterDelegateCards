@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "layoutKey": "material",
+    "textStyleKey": "italic",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Birds of Paradise"
+  },
+  {
+    "id": 2,
+    "layoutKey": "visual",
+    "textStyleKey": "visual",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 3,
+    "layoutKey": "thumbnail",
+    "textStyleKey": "light",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Friends"
+  },
+  {
+    "id": 4,
+    "layoutKey": "material",
+    "textStyleKey": "typeset",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Birds of Paradise"
+  },
+  {
+    "id": 5,
+    "layoutKey": "thumbnail",
+    "textStyleKey": "header",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Friends"
+  },
+  {
+    "id": 6,
+    "layoutKey": "material",
+    "textStyleKey": "light",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Birds of Paradise"
+  },
+  {
+    "id": 7,
+    "layoutKey": "visual",
+    "textStyleKey": "visual",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 8,
+    "layoutKey": "thumbnail",
+    "textStyleKey": "light",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Friends"
+  },
+  {
+    "id": 9,
+    "layoutKey": "thumbnail",
+    "textStyleKey": "material",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Friends"
+  },
+  {
+    "id": 10,
+    "layoutKey": "material",
+    "textStyleKey": "material",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Birds of Paradise"
+  },
+  {
+    "id": 11,
+    "layoutKey": "material",
+    "textStyleKey": "typeset",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Birds of Paradise"
+  },
+  {
+    "id": 12,
+    "layoutKey": "visual",
+    "textStyleKey": "visual",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Sample Overline"
+  },
+  {
+    "id": 6,
+    "layoutKey": "material",
+    "textStyleKey": "header",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "overline": "Birds of Paradise"
+  }
+]

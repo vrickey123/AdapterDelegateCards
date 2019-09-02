@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="basilGreenDark">#356859</color>
+    <color name="basilGreenMid">#37966F</color>
+    <color name="basilGreenLight">#B9E4C9</color>
+    <color name="basilGreenUltraLight">#F1F5DF</color>
+    <color name="basilYellowDark">#ECE9D5</color>
+    <color name="basilYellow">#FFFBE6</color>
+    <color name="basilOrange">#FD5523</color>
+    <color name="basilPink">#EE679B</color>
 </resources>
