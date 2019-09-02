@@ -3,80 +3,80 @@
     "id": 1,
     "layoutKey": "material",
     "textStyleKey": "italic",
-    "title": "This is a sample title",
-    "body": "This is a sample body",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "overline": "Sample Overline"
   },
   {
     "id": 2,
     "layoutKey": "visual",
     "textStyleKey": "visual",
-    "title": "This is a sample title",
-    "body": "This is a sample body",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "overline": "Sample Overline"
   },
   {
     "id": 3,
     "layoutKey": "thumbnail",
     "textStyleKey": "light",
-    "title": "This is a sample title",
-    "body": "This is a sample body",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "overline": "Sample Overline"
   },
   {
     "id": 4,
     "layoutKey": "material",
     "textStyleKey": "typeset",
-    "title": "This is a sample title",
-    "body": "This is a sample body",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "overline": "Sample Overline"
   },
   {
     "id": 5,
     "layoutKey": "thumbnail",
     "textStyleKey": "header",
-    "title": "This is a sample title",
-    "body": "This is a sample body",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "overline": "Sample Overline"
   },
   {
     "id": 6,
     "layoutKey": "material",
     "textStyleKey": "italic",
-    "title": "This is a sample title",
-    "body": "This is a sample body",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "overline": "Sample Overline"
   },
   {
     "id": 7,
     "layoutKey": "visual",
     "textStyleKey": "visual",
-    "title": "This is a sample title",
-    "body": "This is a sample body",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "overline": "Sample Overline"
   },
   {
     "id": 8,
     "layoutKey": "thumbnail",
     "textStyleKey": "light",
-    "title": "This is a sample title",
-    "body": "This is a sample body",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "overline": "Sample Overline"
   },
   {
     "id": 9,
     "layoutKey": "thumbnail",
     "textStyleKey": "material",
-    "title": "This is a sample title",
-    "body": "This is a sample body",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "overline": "Sample Overline"
   },
   {
     "id": 10,
     "layoutKey": "material",
     "textStyleKey": "material",
-    "title": "This is a sample title",
-    "body": "This is a sample body",
+    "title": "Lorem ipsum",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "overline": "Sample Overline"
   }
 ]
