@@ -1,17 +1,5 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/basilGreenMid</item>
-        <item name="colorPrimaryDark">@color/basilGreenDark</item>
-        <item name="colorAccent">@color/basilPink</item>
-        <item name="colorSecondary">@color/basilOrange</item>
-        <item name="android:textColorPrimary">@color/basilOrange</item>
-        <item name="android:textColorSecondary">@color/basilGreenDark</item>
-        <item name="android:windowBackground">@color/basilGreenUltraLight</item>
-        <item name="android:listDivider">@drawable/divider</item>
-    </style>
-
     <style name="Card" parent="Widget.MaterialComponents.CardView">\
         <item name="cardBackgroundColor">@color/basilYellow</item>
         <item name="cardElevation">8dp</item>
