@@ -166,6 +166,28 @@ By using `CardViewHolder` and resetting its default values, we can even reuse in
 By separating layout, styles, and text styles across three dimensions; it is possible to create 15 card variants with just three RecyclerView Adapter Delegates.
 
 ### Layout
+Layout is best conceptualized as the abstract positioning of views in a container. Our layouts are concerned with what views go where without knowing what our final card will look like.
+
+#### Material Card Layout
+![Layout Material](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/layout_material.png)
+- 3:2 Image
+- Overline Text View
+- Title Text View
+- Body Text View
+
+#### Thumbnail Card Layout
+![Layout Material](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/layout_thumbnail.png)
+- 1:1 Image
+- Overline Text View
+- Title Text View
+- Body Text View
+
+#### Visual Card Layout
+![Layout Material](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/layout_visual.png)
+- 4:2 Image
+- Overlay Gradient
+- Overlay Title Text View
+
 ### Styles
 ### Text Styles
 
