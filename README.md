@@ -65,8 +65,6 @@ Ideally, we want to harness the performance of the RecyclerView Adapter with som
 
 Each Adapter Delegate implements the RecyclerView Adapter methods of `onCreateViewHolder` and `onBindViewHolder` to compose a card. 
 
-**The `isForViewType` method defines the condition when we would like to use the specific card.**
-
 #### Material Card Adapter Delegate
 ```
 class MaterialCardAdapterDelegate() : AbstractCardAdapterDelegate() {
@@ -256,6 +254,7 @@ Using our text styles and typography style sheet, we can also define a set of co
 ![Text Style Typeset](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/text_style_typeset.png)
 
 ##### Visual
+![Text Style Typeset](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/text_style_visual.png)
 
 ## Composition with a JSON Model
 ### FeedItem.json
@@ -272,14 +271,15 @@ Using a `layoutKey` and a `textStyleKey`, we can compose our cards on the fly wi
   }
 ```
 
-### AdapterDelegate#isForViewType
+### Layout: AdapterDelegate#isForViewType
+The `isForViewType` method defines the condition when we would like to use a specific card layout.
 ```
 override fun isForViewType(items: List<FeedItem>, position: Int): Boolean {
         return items[position].layoutKey == "visual"
     }
 ```
 
-### CardViewHolder#setCompositeTextAppearance
+### Text Style: CardViewHolder#setCompositeTextAppearance
 ```
 fun setCompositeTextAppearance(bodyTextView: TextView?, titleTextView: TextView, textStyleKey: String) {
         when (textStyleKey) {
@@ -316,6 +316,14 @@ fun setCompositeTextAppearance(bodyTextView: TextView?, titleTextView: TextView,
 ```
 
 ### Examples
+#### Basil Theme x Matieral Card Layout x Italic Text
+![Material-Italic](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/card_material.png)
+
+#### Basil Theme x Thumbnail Card Layout x Light Text
+![Thumbnail-Light](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/card_thumbnail.png)
+
+#### Basil Theme x Visual Card Layout x Visual Text
+![Visual-Visual](https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/card_visual.png)
 
 ## Resources
 - Adapter Delegates
