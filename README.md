@@ -1,6 +1,8 @@
 # AdapterDelegateCards
 <img src="https://github.com/vrickey123/AdapterDelegateCards/blob/develop/docs/feed.gif" width="360">
 
+A proof of concept for a **composition-over-inheritance RecyclerView that uses Card Components and JSON-driven styles**. It's built with Hannes Dorfmann's library of the same name.
+
 [Adapter Delegates](https://github.com/sockeqwe/AdapterDelegates) are an inversion control pattern for the RecylerView designed to help you _add reusable cards to a list_ instead of _defining a fix set of cards to an Adapter_ that [leads to a subclass hell](http://hannesdorfmann.com/android/adapter-delegates).
 
 This sample uses Adapter Delegates to create a visually robust feed with a few goals:
@@ -23,7 +25,7 @@ Even worse, you have to make sure your when case in `onCreateViewHolder` matches
 
 This solution doesn't scale well when we have 10 different View Types with unique on bind logic for each case.
 
-```
+```kotlin
 class FeedAdapter : ListAdapter<FeedItem, CardViewHolder>(FeedItemDiffCallback()) {
 
     companion object {
@@ -65,10 +67,12 @@ class FeedAdapter : ListAdapter<FeedItem, CardViewHolder>(FeedItemDiffCallback()
 ### Adapter Delegates
 Ideally, we want to harness the performance of the RecyclerView Adapter with something that scales well when we have 10 or more cards in our feed. 
 
-Each Adapter Delegate implements the RecyclerView Adapter methods of `onCreateViewHolder` and `onBindViewHolder` to compose a card. 
+Each Adapter Delegate implements the RecyclerView Adapter methods of `onCreateViewHolder` and `onBindViewHolder` to compose a card.
+
+In this sense, **an Adapater Delegate is a Card Component**.
 
 #### Material Card Adapter Delegate
-```
+```kotlin
 class MaterialCardAdapterDelegate() : AbstractCardAdapterDelegate() {
 
     override fun onCreateViewHolder(parent: ViewGroup): RecyclerView.ViewHolder {
@@ -91,7 +95,7 @@ class MaterialCardAdapterDelegate() : AbstractCardAdapterDelegate() {
 ```
 
 #### Thumbnail Card Adapter Delegate
-```
+```kotlin
 class ThumbnailCardAdapterDelegate() : AbstractCardAdapterDelegate() {
 
     override fun onCreateViewHolder(parent: ViewGroup): RecyclerView.ViewHolder {
@@ -114,7 +118,7 @@ class ThumbnailCardAdapterDelegate() : AbstractCardAdapterDelegate() {
 ```
 
 #### Visual Card Adapter Delegate
-```
+```kotlin
 class VisualCardAdapterDelegate() : AbstractCardAdapterDelegate() {
     override fun onCreateViewHolder(parent: ViewGroup): RecyclerView.ViewHolder {
         return CardViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.card_visual, parent, false))
@@ -136,7 +140,7 @@ class VisualCardAdapterDelegate() : AbstractCardAdapterDelegate() {
 ```
 
 #### Adapter Delegate Manager
-```
+```kotlin
 class FeedAdapterDelegatesManager() : ListDelegationAdapter<List<FeedItem>>() {
 
     companion object {
@@ -197,7 +201,7 @@ Layout is best conceptualized as the abstract positioning of views in a containe
 ### Styles
 The styles are concerned with the relationship between views in a layout; i.e. margin, padding, or line height properties. By keep text styles in separate dimension, styles can be simplified and reused across many layouts easily.
 
-```
+```xml
 <style name="CustomComponent.Overline">
         <item name="android:layout_marginTop">@dimen/material_component_vertical_padding</item>
     </style>
@@ -219,7 +223,7 @@ The styles are concerned with the relationship between views in a layout; i.e. m
 ### Text Styles
 The text styles make up our base Typography stylesheet and override [Android's TextAppearance attributes](https://developer.android.com/reference/android/R.styleable.html#TextAppearance).
 
-```
+```xml
     <style name="Body" parent="TextAppearance.MaterialComponents.Body1">
         <item name="android:textColor">?android:textColorSecondary</item>
     </style>
@@ -262,7 +266,7 @@ Using our text styles and typography style sheet, we can also define a set of co
 ### FeedItem.json
 Using a `layoutKey` and a `textStyleKey`, we can compose our cards on the fly with a combination layout and composite text style.
 
-```
+```json
 {
     "id": 1,
     "layoutKey": "material",
@@ -275,14 +279,14 @@ Using a `layoutKey` and a `textStyleKey`, we can compose our cards on the fly wi
 
 ### Layout: AdapterDelegate#isForViewType
 The `isForViewType` method defines the condition when we would like to use a specific card layout.
-```
+```kotlin
 override fun isForViewType(items: List<FeedItem>, position: Int): Boolean {
         return items[position].layoutKey == "visual"
     }
 ```
 
 ### Text Style: CardViewHolder#setCompositeTextAppearance
-```
+```kotlin
 fun setCompositeTextAppearance(bodyTextView: TextView?, titleTextView: TextView, textStyleKey: String) {
         when (textStyleKey) {
             "material" -> {
